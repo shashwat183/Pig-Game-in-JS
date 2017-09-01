@@ -39,7 +39,7 @@ document.querySelector('.btn-hold').addEventListener('click', function() {
   if (gamePlaying) {
   scores[activePlayer] += roundScore;
   document.getElementById('score-' + activePlayer).textContent = scores[activePlayer];
-  if (scores[activePlayer] >= 20) {
+  if (scores[activePlayer] >= 100) {
     document.getElementById('name-' + activePlayer).textContent = 'Winner';
     document.querySelector('.player-' + activePlayer + '-panel').classList.remove('active');
     document.querySelector('.player-' + activePlayer + '-panel').classList.add('winner');
